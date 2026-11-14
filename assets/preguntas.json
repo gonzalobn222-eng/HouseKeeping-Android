@@ -1,0 +1,196 @@
+{
+  "ORGANIZAR": [
+    [
+      10,
+      "¿Existe un lugar específico para ubicar manuales, procedimientos, equipos, herramientas, materiales, maquinaria, artículos de oficina, equipos computacionales?"
+    ],
+    [
+      11,
+      "¿Están disponibles los manuales, procedimientos, equipos, herramientas, materiales, maquinaria, etc., necesarios, en el área de trabajo?"
+    ],
+    [
+      12,
+      "¿Se han retirado los manuales, procedimientos, equipos, herramientas, materiales, maquinaria, etc., que no pertenecen al área de trabajo o actividad a realizar?"
+    ]
+  ],
+  "ORDENAR": [
+    [
+      15,
+      "¿Maquinarias y/o vehículos, se encuentran debidamente acuñados en pendiente (negativa/positiva)?"
+    ],
+    [
+      16,
+      "¿Están ordenados todos los manuales, procedimientos, equipos, herramientas, materiales, maquinaria, artículos de oficina, equipos computacionales en sus lugares específicos o definidos para cada uno de ellos?"
+    ],
+    [
+      17,
+      "¿Se dispone de áreas y recipientes para los diferentes tipos de residuos (domésticos, industriales no peligrosos, industriales peligrosos), según se requiera?"
+    ],
+    [
+      18,
+      "¿Está actualizada y ordenada la información de los manuales, procedimientos, documentación legal (autorizaciones, resoluciones, etc.)?"
+    ],
+    [
+      19,
+      "¿Se encuentran ordenadas las herramientas de trabajo, materiales, maquinaria, extensiones eléctricas, mangueras, en un lugar especifico antes de su uso?"
+    ],
+    [
+      20,
+      "¿Se han eliminado los riesgos potenciales de: resbalones, tropiezos y caídas?"
+    ],
+    [
+      21,
+      "¿Cajas, materiales y/o componentes almacenados en lugares altos, están debidamente estibados y asegurados?"
+    ],
+    [
+      22,
+      "¿Equipos, componentes, materiales y herramientas están debidamente distribuidos, apilados y asegurados, en el lugar de trabajo, mientras son ocupados?"
+    ],
+    [
+      23,
+      "¿Equipos, componentes, materiales y herramientas están debidamente ordenados, apilados, almacenados y asegurados; después de su uso?"
+    ],
+    [
+      24,
+      "¿Están las mangueras, cordeles, extensiones y cables eléctricos, entre otros, correctamente enrollados y colgados, después de su uso?"
+    ],
+    [
+      25,
+      "¿Las mangueras, cordeles, extensiones y cables eléctricos, en uso, se encuentran dispuestos de manera segura en el área de trabajo?"
+    ],
+    [
+      26,
+      "¿Cintas de precaución y/o prohibición instaladas según se requiere y en buenas condiciones?"
+    ],
+    [
+      27,
+      "¿Iluminación del área de trabajo está operativa y en buenas condiciones de uso (luminarias limpias)?"
+    ],
+    [
+      28,
+      "¿Maquinarias y/o vehículos están correctamente estacionados en la zona de estacionamiento y/o parqueo del área? (aculatados)"
+    ],
+    [
+      29,
+      "¿Equipos de apoyo, materiales, componentes, cajas, etc.; se encuentran debidamente estibados y asegurados en las carrocerías de los vehículos, destinadas para tal efecto?"
+    ],
+    [
+      30,
+      "¿Cabinas de las maquinarias y/o vehículos, se encuentran limpias y ordenadas?"
+    ]
+  ],
+  "LIMPIAR": [
+    [
+      33,
+      "¿Está el área limpia, libre de polvo y sin residuos domésticos o industriales?"
+    ],
+    [
+      34,
+      "¿Se depositan los residuos correctamente, según su clasificación, sin mezclarlos en los recipientes habilitados?"
+    ],
+    [
+      35,
+      "¿Área de trabajo está libre de derrames?"
+    ],
+    [
+      36,
+      "¿Se han informado y limpiado los derrames de sustancias peligrosas (aceite, petróleo, etc.), de manera oportuna, ejecutando una eliminación segura de los residuos, de acuerdo a lo establecido en plan de manejo de residuos peligrosos?"
+    ],
+    [
+      37,
+      "¿Escaleras están libres de materiales, herramientas, residuos, etc., para permitir un correcto uso y desplazamiento?"
+    ],
+    [
+      38,
+      "¿Está el área libre de trozos de metal con puntas sobresalientes, maderas con clavos a la vista, etc.; para evitar cortes o pinchazos?"
+    ],
+    [
+      39,
+      "¿Se detecta en el área de trabajo la presencia de gases que no son propios de la operación realizada, evidenciando posibles fugas?"
+    ],
+    [
+      40,
+      "¿Se detecta en el área de trabajo, mobiliario o  materiales en mal estado?"
+    ],
+    [
+      41,
+      "¿Están todos los pasillos, vías de evacuación y puertas de salida despejadas?"
+    ]
+  ],
+  "ESTANDARIZAR": [
+    [
+      44,
+      "¿Están los manuales, procedimientos, equipos, herramientas, materiales, maquinarias, artículos de oficina, equipos computacionales, en las zonas definidas para ello?"
+    ],
+    [
+      45,
+      "¿Está el área de trabajo debidamente señalizada (restricciones y uso de EPP obligatorios) y delimitada, para evitar el ingreso de personas no autorizadas?"
+    ],
+    [
+      46,
+      "¿Los recipientes de almacenamiento de sustancias peligrosas están debidamente utilizados y rotulados?"
+    ],
+    [
+      47,
+      "¿Las sustancias peligrosas almacenadas, corresponden a lo indicado en el rótulo o etiqueta del recipiente usado?"
+    ],
+    [
+      48,
+      "¿Residuos domésticos e industriales son depositados en recipientes claramente identificados y rotulados?"
+    ],
+    [
+      49,
+      "¿Estanterías se encuentran ordenadas y rotuladas, indicando el material y/o componente almacenado?"
+    ],
+    [
+      50,
+      "¿Se utiliza algún sistema de clasificación en la documentación del área (nombre, código, colores, leyendas, símbolos)?"
+    ],
+    [
+      51,
+      "¿Tienen los documentos, archivos, carpetas, etc.; un sistema de identificación, tales como  códigos, glosario, guías, colores, leyendas o símbolos?"
+    ],
+    [
+      52,
+      "¿Se encuentran los dispositivos de emergencia (extintores, alarmas, luces de emergencia, etc.), señalizados e instalados?"
+    ],
+    [
+      53,
+      "¿Están las vías de evacuación, despejadas y claramente señalizadas?"
+    ],
+    [
+      54,
+      "¿Zonas de estacionamiento y/o parqueo están debidamente señalizadas en los lugares de trabajo?"
+    ],
+    [
+      55,
+      "¿Existen instalaciones sanitarias en cantidad suficiente y en buenas condiciones de uso, de acuerdo a la dotación de personal del área?"
+    ]
+  ],
+  "AUTODISCIPLINA": [
+    [
+      58,
+      "¿El personal conoce y aplica el procedimiento de Orden y Limpieza, junto con Controles Visuales (rotulación)?"
+    ],
+    [
+      59,
+      "¿Se realizan inspecciones de Orden y Limpieza en el área de trabajo?"
+    ],
+    [
+      60,
+      "¿Se realizan reuniones periódicas para revisión de cumplimiento del Plan de Orden y Limpieza?"
+    ],
+    [
+      61,
+      "¿Existen evaluaciones cruzadas de Orden y Limpieza entre áreas o departamentos de la misma Gerencia o Vicepresidencia?"
+    ],
+    [
+      62,
+      "¿Se da entrenamiento en el procedimiento de Orden y Limpieza a nuevos trabajadores/colaboradores?"
+    ],
+    [
+      63,
+      "¿Se da a conocer al personal los resultados de inspecciones, las acciones correctivas y preventivas generadas en estas actividades?"
+    ]
+  ]
+}
