@@ -1,23 +1,53 @@
+
 name: Compilar APK Android
+
 on:
   workflow_dispatch:
+
 jobs:
   apk:
     runs-on: ubuntu-24.04
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Paquetes de compilación
+      - name: Descargar proyecto
+        uses: actions/checkout@v4
+
+      - name: Instalar paquetes de compilación
         run: |
           sudo apt-get update
-          sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip python3-virtualenv autoconf libtool pkg-config zlib1g-dev libncurses-dev cmake libffi-dev libssl-dev automake autopoint gettext
-      - name: Python y Buildozer
+          sudo apt-get install -y \
+            git zip unzip openjdk-17-jdk \
+            python3-pip python3-venv python3-virtualenv \
+            autoconf automake libtool libtool-bin \
+            libltdl-dev pkg-config \
+            zlib1g-dev libncurses-dev \
+            cmake libffi-dev libssl-dev \
+            autopoint gettext
+
+      - name: Preparar macros de Libtool
         run: |
-          python3 -m pip install --user --break-system-packages buildozer setuptools 'cython==0.29.34'
+          libtoolize --version
+          autoreconf --version
+          aclocal --version
+
+      - name: Instalar Python y Buildozer
+        run: |
+          python3 -m pip install --user --break-system-packages \
+            buildozer setuptools 'cython==0.29.34'
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Limpiar compilaciones anteriores
+        run: |
+          rm -rf .buildozer bin
+
       - name: Generar APK
-        run: buildozer -v android debug
+        run: |
+          buildozer -v android debug
+
       - name: Descargar APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: HouseKeeping-Android-APK
           path: bin/*.apk
+          if-no-files-found: error
