@@ -9,40 +9,55 @@ jobs:
     runs-on: ubuntu-24.04
 
     steps:
-      - name: Descargar proyecto
+      - name: Descargar repositorio
         uses: actions/checkout@v4
 
-      - name: Instalar paquetes de compilación
+      - name: Instalar dependencias del sistema
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            git zip unzip openjdk-17-jdk \
-            python3-pip python3-venv python3-virtualenv \
-            autoconf automake libtool libtool-bin \
-            libltdl-dev pkg-config \
+            git zip unzip \
+            openjdk-17-jdk \
+            python3-pip python3-virtualenv \
+            autoconf automake autopoint \
+            libtool libtool-bin libltdl-dev \
+            pkg-config \
             zlib1g-dev libncurses-dev \
             cmake libffi-dev libssl-dev \
-            autopoint gettext
+            gettext
 
-      - name: Preparar macros de Libtool
+      - name: Verificar herramientas
         run: |
-          libtoolize --version
-          autoreconf --version
-          aclocal --version
+          autoconf --version | head -n 1
+          automake --version | head -n 1
+          libtoolize --version | head -n 1
+          aclocal --version | head -n 1
 
       - name: Instalar Python y Buildozer
         run: |
-          python3 -m pip install --user --break-system-packages \
-            buildozer setuptools 'cython==0.29.34'
+          python3 -m pip install --user \
+            --break-system-packages \
+            buildozer setuptools \
+            'cython==0.29.34'
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
 
       - name: Limpiar compilaciones anteriores
         run: |
-          rm -rf .buildozer bin
+          rm -rf .buildozer
+          mkdir -p bin
 
       - name: Generar APK
         run: |
-          buildozer -v android debug
+          set -o pipefail
+          buildozer -v android debug 2>&1 | tee buildozer.log
+
+      - name: Guardar registros
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Buildozer-Logs
+          path: buildozer.log
+          if-no-files-found: ignore
 
       - name: Descargar APK
         if: success()
